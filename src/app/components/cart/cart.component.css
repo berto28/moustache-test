@@ -1,0 +1,60 @@
+.cartContainer{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 280px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+description{
+    width: 40%;
+}
+.imgContainer{
+    width: 35%;
+    margin: 0 20px 0 0;
+}
+
+li{
+    overflow: hidden;
+    margin: 0 0 25px 0;
+}
+
+li:last-child{
+    margin: 0;
+}
+
+div{
+    float: left;
+}
+
+div > p{
+    margin: 0 0 20px 0;
+    color: #222;
+}
+
+.price{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1086px) {
+	.cartContainer{
+        width: 90%;
+    }
+
+    .imgContainer{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 472px) {
+    .cartContainer{
+        width: 87.5%;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .cartContainer{
+        width: 85.5%;
+    }
+}

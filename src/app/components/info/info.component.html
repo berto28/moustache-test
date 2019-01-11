@@ -1,0 +1,22 @@
+<div class="info">
+  <h1>Classic Tee</h1>
+  <div class="price">
+      <span>&#x24;{{price}}</span>
+  </div>
+  <div class="description">
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis voluptatibus vero 
+      accusantium veniam asperiores iusto pariatur itaque debitis assumenda? Ad sint expedita porro 
+      voluptas harum delectus veniam tempore placeat autem.
+    </p>
+  </div>
+  <div class="sizes">
+    <h2>SIZE<span class="star">*</span><span class="selectedSize"> {{ selectedSize }}</span></h2>
+    <div class="sizesButton">
+        <a *ngFor="let btn of btnArray; let i = index" 
+        [class]="btn.active" 
+        (click)="onSelectSize(i)">{{btn.size}}</a>
+    </div>
+  </div>
+  <a class="btn" (click)="addToCart()">ADD TO CART</a>
+</div>

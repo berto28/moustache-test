@@ -1,0 +1,14 @@
+<div class="cartContainer" *ngIf="cart">
+    <ul>
+        <li *ngFor="let i of items">
+            <div class="imgContainer">
+                <img [src]="i.imgSrc" alt="">
+            </div>
+            <div class="descriptiption">
+                <p class="name">{{i.name}}</p>
+                <p class="qty">{{i.count}}x <span class="price"> &#x24;{{i.price }} </span></p>
+                <p class="size">Size: {{ i.size }} </p>
+            </div>
+        </li>
+    </ul>
+</div>

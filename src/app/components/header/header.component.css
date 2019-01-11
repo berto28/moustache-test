@@ -1,0 +1,53 @@
+.header{
+    background: #F6F6F7;
+    height: 40px;
+    margin: 20px 0 40px 0;
+    color: #888;
+}
+.cartContainer{
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header div:nth-child(1){
+    position: relative;
+}
+
+a{
+    padding: 13px 12px;
+    position: relative;
+    z-index: 9999;
+}
+
+a:hover{
+    cursor: pointer;
+    color: #222;
+}
+
+a.active{
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.iconCart{
+    display: none;
+}
+
+@media only screen and (max-width: 1086px) {
+	.iconCart{
+        display: inline-block;
+        max-width: 22px;
+        margin: 0 5px 0 0;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        padding: 8.5px 12px;
+    }
+    .textCart{
+        display: none;
+    }
+}

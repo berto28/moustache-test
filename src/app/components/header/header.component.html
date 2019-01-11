@@ -1,0 +1,14 @@
+<div class="header">
+  <div class="wrapInner">
+    <div class="cartContainer">
+      <a (mouseenter)="showCart()" (mouseleave)="showCart()" [class.active]="cart">
+        <span class="textCart">My Cart</span>
+        <span class="iconCart">
+            <img  [src]="iconSrc" alt=""> 
+          <!-- <img  src="../../../assets/icon_cart.png" alt="">  -->
+        </span> ( {{ cartService.cartSize}} )
+      </a>
+    </div>
+    <app-cart [items]="cartService.cart" [cart]="cart"></app-cart>
+  </div>
+</div>

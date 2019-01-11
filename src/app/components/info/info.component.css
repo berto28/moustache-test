@@ -1,0 +1,90 @@
+.info{
+    float: right;
+    width: 45%;
+    padding: 0 0 40px 0;
+}
+h1{
+    font-size: 1.5em;
+    margin: 0 0 20px 0;
+}
+.price{
+    padding: 10px 0;
+    border-top: 1px dotted #CCC;
+    border-bottom: 1px dotted #CCC;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+}
+.description{
+    line-height: 1.5;
+    margin: 0 0 40px 0;
+}
+.sizes{
+    margin: 0 0 30px 0;
+}
+h2{
+    margin: 0 0 15px 0;
+}
+
+h2 .star{
+    color: #C90000;
+}
+h2 .selectedSize{
+    color: #222;
+}
+.sizesButton{
+    display: flex;
+    width: 150px;
+    justify-content: space-between
+}
+
+.sizesButton a{
+    padding: 10px 14px;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.btn{
+    padding: 10px 30px;
+    border: 2px solid #222;
+    transition: .2s;
+}
+
+.btn:hover{
+    background: #222;
+    color: #fff;
+    transition: .2s;
+}
+
+a.active{
+    border: 2px solid #222 !important;
+    
+}
+
+.description, .sizes{
+    color: #888;
+}
+
+
+@media only screen and (max-width: 1086px) {
+	.info{
+        float: none;
+        width: 100%;
+    }
+    .price{
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .btn:hover{
+       border: 2px solid #222;
+       background: #fff;
+       color: #222;
+    }
+    .btn, h2{
+        font-weight: bold;
+    }
+}
